@@ -9,10 +9,10 @@ public abstract class BaseItem {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Column(unique = true)
-    private String number;
-    @Column(name = "available_limit", scale = 13, precision = 2)
-    private BigDecimal limit;
+
+    private String icon;
+
+    private String description;
 
     public Long getId() {
         return id;
@@ -22,19 +22,19 @@ public abstract class BaseItem {
         this.id = id;
     }
 
-    public String getNumber() {
-        return number;
+    public String getIcon() {
+        return icon;
     }
 
-    public void setNumber(String number) {
-        this.number = number;
+    public void setIcon(String icon) {
+        this.icon = icon;
     }
 
-    public BigDecimal getLimit() {
-        return limit;
+    public String getDescription() {
+        return description;
     }
 
-    public void setLimit(BigDecimal limit) {
-        this.limit = limit;
+    public void setDescription(String description) {
+        this.description = description;
     }
 }
