@@ -6,4 +6,4 @@ spring:
   jpa:
     open-in-view: false
     hibernate:
-      ddl-auto: create // DEPOIS DE RODAR A PRIMEIRA VEZ, MUDAR PARA validate
+      ddl-auto: validate
